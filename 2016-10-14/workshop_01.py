@@ -1,6 +1,6 @@
 from larlib import * 
 
-def make_struct((px,py),by,pillar_distances, beam_interstory_heights):
+def make_struct((px,py),(by,bz),pillar_distances, beam_interstory_heights):
 	
 	""" array for the pillar foundations """
 	pillar_array = [px]
@@ -18,7 +18,7 @@ def make_struct((px,py),by,pillar_distances, beam_interstory_heights):
 	""" array for the z-axis of the pillar """
 	heights_pillar = []
 	for value in beam_interstory_heights:
-		heights_pillar = heights_pillar+[value+px]
+		heights_pillar = heights_pillar+[value+bz]
 	
 	""" z-axis of the pillar """
 	z_base_pillar = QUOTE(heights_pillar)
@@ -39,7 +39,7 @@ def make_struct((px,py),by,pillar_distances, beam_interstory_heights):
 	""" array for distance between the beams """
 	beams_distance = []
 	for value in beam_interstory_heights:
-		beams_distance = beams_distance+[-value]+[by]
+		beams_distance = beams_distance+[-value]+[bz]
 
 	beams = PROD([xy_base_beam, QUOTE(beams_distance)])
 
@@ -50,7 +50,7 @@ def make_struct((px,py),by,pillar_distances, beam_interstory_heights):
 
 
 def main():
-	VIEW(make_struct((0.4,0.4),(0.4),[1,1,5,2],[2,2,1,4]))
+	VIEW(make_struct((0.4,0.4),(0.4,0.6),[1,1,5,2],[2,2,1,4]))
 
 if __name__=='__main__':
 	main()
