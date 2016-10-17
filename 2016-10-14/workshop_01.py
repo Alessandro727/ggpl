@@ -48,7 +48,6 @@ def make_struct((px,py),(by,bz),pillar_distances, beam_interstory_heights):
 	return struct
 	
 
-
 def main():
 	VIEW(make_struct((0.4,0.4),(0.4,0.6),[1,1,5,2],[2,2,1,4]))
 
