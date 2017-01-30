@@ -31,17 +31,17 @@ def hole_builder(fileName):
 
 def house_builder():
 
-	ext_wall_2D = builder_2D("ext_wall")
-	floor = SOLIDIFY(ext_wall_2D)
+	extWall2D = builder_2D("ext_wall")
+	floor = SOLIDIFY(extWall2D)
 	floor = TEXTURE("texture/parquet.jpg")(floor)
 
 
-	extwalls = OFFSET([12,12])(ext_wall_2D)
+	extwalls = OFFSET([12,12])(extWall2D)
 	extwalls = PROD([extwalls, Q(150)])
 	
-	int_wall_2D = builder_2D("int_wall")
+	intWall2D = builder_2D("int_wall")
 
-	intwalls = OFFSET([12,12])(int_wall_2D)
+	intwalls = OFFSET([12,12])(intWall2D)
 	intwalls = PROD([intwalls, Q(150)])
 
 	door = hole_builder("doors")

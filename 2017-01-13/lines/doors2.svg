@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="736"
+   height="736"
+   viewBox="0 0 736 736"
+   sodipodi:docname="doors2.svg">
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="doors"
+     style="display:inline">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#fc0000;stroke-width:1.76000786;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4365"
+       width="46.019653"
+       height="39.279747"
+       x="276.38"
+       y="251.32004" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#fc0000;stroke-width:1.41873217;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4369"
+       width="40.123642"
+       height="31.713594"
+       x="277.76871"
+       y="355.4902" />
+    <rect
+       style="display:inline;fill:none;fill-opacity:1;stroke:#fc0000;stroke-width:1.13808382;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4373"
+       width="49.76022"
+       height="42.531143"
+       x="601.96735"
+       y="350.40439" />
+    <rect
+       style="display:inline;fill:none;fill-opacity:1;stroke:#fc0000;stroke-width:1.25874591;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4371"
+       width="41.842953"
+       height="34.803051"
+       x="336.94293"
+       y="354.4968" />
+    <rect
+       style="display:inline;fill:none;fill-opacity:1;stroke:#fc0000;stroke-width:1.37068522;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4375"
+       width="41.73101"
+       height="29.556427"
+       x="477.9054"
+       y="539.3324" />
+  </g>
+</svg>

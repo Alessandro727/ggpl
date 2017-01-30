@@ -18,11 +18,11 @@ def resize(x,y,dX,dY):
 	which is located below the reference axis by removing the negative cells calculated through the object UKPOL 
 	and it returns the original object without the bad part.
 	@param ukpol: object UKPOL """
-def removeNegative(ukpol):
-	for cell_index in range(len(ukpol[1])):
-		for vertex in ukpol[1][cell_index]:
+def remove_negative(ukpol):
+	for cellIndex in range(len(ukpol[1])):
+		for vertex in ukpol[1][cellIndex]:
 			if (ukpol[0][vertex-1][1] < -0.01):
-				ukpol[1][cell_index] = [0,0]
+				ukpol[1][cellIndex] = [0,0]
 	return MKPOL([ukpol[0], ukpol[1], 1])
 
 """ make_arc is a function to realize the upper arc of a window. 
@@ -32,7 +32,7 @@ def removeNegative(ukpol):
 def make_arc(dx,dy,dz):
 	arc = CIRCLE(dx/2.)([12,2])
 	arc = R([1,3])(PI/2)(arc)
-	arc = removeNegative(UKPOL(SKEL_1(arc)))
+	arc = remove_negative(UKPOL(SKEL_1(arc)))
 	arc = OFFSET([dy/3.,dy/3.,dy/3.])(arc)
 	arc = R([1,3])(3*PI/2)(arc)
 	arc = MAP([S1,S3,S2])(arc)
@@ -49,10 +49,10 @@ def make_handle(dz):
 	handle = CIRCLE(2*dz/3.)([100,1])
 	handle = R([1,3])(PI/2)(handle)
 	handle = T(2)((-dz)/1.8)(handle)
-	handle = removeNegative(UKPOL(SKEL_1(handle)))
+	handle = remove_negative(UKPOL(SKEL_1(handle)))
 	handle = OFFSET([0.1,0.05,0])(handle)
 	handle = T(2)(-dz/20.)(handle)
-	handle = removeNegative(UKPOL((handle)))
+	handle = remove_negative(UKPOL((handle)))
 
 	return handle
 
