@@ -14,7 +14,7 @@ def resize(x,y,dX,dY):
 	for j in range(len(y)-2):
 		y[j+1] = y[j+1]/(sumY/dY)
 
-""" removeNegative is a function to remove the part of an object 
+""" remove_negative is a function to remove the part of an object 
 	which is located below the reference axis by removing the negative cells calculated through the object UKPOL 
 	and it returns the original object without the bad part.
 	@param ukpol: object UKPOL """
@@ -88,7 +88,7 @@ def ggpl_window(xWindow,yWindow, occurrencyWindow):
 
 	return ggpl_window0	
 
-""" ggpl_window is a function able to realize any type of rectangular door 
+""" ggpl_door is a function able to realize any type of rectangular door 
 	thanks to two arrays with the distances of the various parts which is on the x axis and y axis 
 	to an array with the occurrences of each part. 
 	The function in question creates the door and adds a handle to produce the image to be displayed.
